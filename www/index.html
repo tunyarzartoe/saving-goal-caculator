@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script><script src="js/classic.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>貯金シミュレーション</h1>
+    <h2>10年積立複利の計算</h2>
+    <div class="interest">
+        毎年積み立てる金額:<input type="number" value="10000" id="addition" placeholder="金額">円<br/>
+        利率:<input type="number" value="2" id="rate" placeholder="利率(%)">%<br/>
+    	<button id="calcButton">計算</button>
+    </div>
+    <table>
+        <thead>
+            <tr><th>年</th><th>合計金額</th></tr>
+        </thead>
+        <tbody id="result">
+        </tbody>
+    </table>
+    <script src="js/main.js"></script>
+</body>
+</html>
